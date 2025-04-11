@@ -1,0 +1,23 @@
+Jarraibideak
+
+- Elementu guztien paddinga eta marjina zero da, eta kaxaren tamaina kaxaren bordeetara ezarrita dago (box-sizing: border-box).
+
+- Gorputza (body) flexbox bat da (display: flex) eta bere norabidea zutabea da (flex-direction: column). Elementu guztiek lerrokatuta egon behar dute zentroan (align-items: center), eta edukiak ere zentroan lerrokatua egon behar du (justify-content: center). min-height 100vh-koa izango da. Tipografia arial da, san-serif. Background-color da #f9f9f9 eta letra-color #333.
+
+- Goiburuko edukiontziak 20 px-ko tartea du (margin) eta testuak zentratuta (text-align: center) egon behar du.
+
+- Formulario-kontainerrak 20 px padding ditu, erradioa 8px, box-shadow: rgba (0,0,0,0.1), atzealdeko kolorea zuria da, zabalera maximoa 400px. Jarri zabalera %100ean.
+
+- Forma-errenkada flexbox bat da, norabide-zutabearekin (column), eta 15 px margin bottom du.
+
+- Etiketa guztiak (label) belztuak dira eta beheko margin 5px-eko tartea dute.
+
+- Testua (text), posta elektronikoa (email) pasahitza (password) input motek (input[type="text"]), eta, gainera, select elementuek ezaugarri hauek dituzte:  padding du: 10px, letraren tamaina (letter size): 1rem, border 1px solidoa da, kolore-kodearekin: #ccc eta erradioa 4px.
+
+- Klasea = form-taldea duen div-a flexbox bat da eta space-between 10px top-margin 5px eta flex-wrap wrap da.
+
+- Radio eta checkbox input motek margin right 5px-ekoa dute.
+
+- Bidaltzeko botoiak (submit-btn) 10px-eko padding du, atzekaldeko kolorekoa: # 007BFF, letra-tamaina: 1rem, erradioa: 4px (border-radius), kurtsorea: pointer (cursor: pointer;), borde gabea (border: none) eta hizkiek kolore zuria dute. Azkenik, botoiak badauka hover motako pseudo-klase bat atzekaldeko kolorearekin: #0056b3 (submit-btn:hover{}).
+
+- Ikertu nola lortu zenezakeen modu iluna Javascript erabili gabe. BAKARRIK bi radio-inputs sartu behar dituzu argazki pantailetan azaltzen diren etiketak bezala.
