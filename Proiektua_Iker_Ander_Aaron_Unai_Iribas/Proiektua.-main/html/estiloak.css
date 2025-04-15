@@ -1,0 +1,232 @@
+:root {
+    --bg: white black;
+    --text: black white;
+    --available-color-schemes: light dark;
+}
+
+body:has(input[value="Argia"]:checked){
+    --available-color-schemes: light;
+    --bg: white;
+    --text:black;
+}
+
+body:has(input[value="Iluna"]:checked){
+    --available-color-schemes: Iluna;
+    --bg: black;
+    --text:white;
+    .formulario-kontainerra{
+        background-color: black;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+
+.goiburua {
+    margin: 20px;
+    text-align: center;
+}
+  
+
+.formulario-kontainerra {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+}
+  
+
+.form-errenkada {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+  
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-taldea {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+  
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+  
+
+.submit-btn {
+    padding: 10px;
+    background-color: #007BFF;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 100%;
+}
+  
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+  
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+  
+
+#dark-mode:checked ~ body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+  
+#dark-mode:checked ~ body .formulario-kontainerra {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+  
+#dark-mode:checked ~ body input[type="text"],
+#dark-mode:checked ~ body input[type="email"],
+#dark-mode:checked ~ body input[type="password"],
+#dark-mode:checked ~ body select {
+    background-color: #444;
+    border-color: #666;
+    color: white;
+}
+  
+#dark-mode:checked ~ body input[type="text"]::placeholder,
+#dark-mode:checked ~ body input[type="email"]::placeholder,
+#dark-mode:checked ~ body input[type="password"]::placeholder {
+    color: #aaa;
+}
+  
+#dark-mode:checked ~ body .submit-btn {
+    background-color: #0056b3;
+}
+  
+#dark-mode:checked ~ body .submit-btn:hover {
+    background-color: #003d80;
+}
+
+/* Estilo general de la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Contenedor de cada imagen */
+  .gallery a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  
+  /* Imagen básica */
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zoom al pasar el ratón */
+  .gallery a:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Texto encima de la imagen */
+  .gallery a::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+  }
+  
+  /* Mostrar el texto al pasar el ratón */
+  .gallery a:hover::after {
+    opacity: 1;
+  }
+  
+  /* Modo claro (por defecto) */
+  body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  /* Estilo para la barra de navegación en modo oscuro */
+  body.dark-mode nav {
+    background-color: #222;
+  }
+  
+  /* Estilo para los enlaces del nav en modo oscuro */
+  body.dark-mode nav a {
+    color: #ddd;
+  }
+  
+  /* Estilo para los botones */
+  nav button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
