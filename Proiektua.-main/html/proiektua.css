@@ -1,0 +1,83 @@
+/* Estilo general de la galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contenedor de cada imagen */
+.gallery a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+/* Imagen básica */
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom al pasar el ratón */
+.gallery a:hover img {
+  transform: scale(1.1);
+}
+
+/* Texto encima de la imagen */
+.gallery a::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 16px;
+}
+
+/* Mostrar el texto al pasar el ratón */
+.gallery a:hover::after {
+  opacity: 1;
+}
+
+/* Modo claro (por defecto) */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Estilo para la barra de navegación en modo oscuro */
+body.dark-mode nav {
+  background-color: #222;
+}
+
+/* Estilo para los enlaces del nav en modo oscuro */
+body.dark-mode nav a {
+  color: #ddd;
+}
+
+/* Estilo para los botones */
+nav button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

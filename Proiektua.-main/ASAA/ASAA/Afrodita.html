@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainkoak</title>
+    <link rel="stylesheet" href="proiektua.css" >
+    <style>
+        nav {
+          background-color: #333;
+          padding: 10px;
+        }
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+  <script>
+    function itxi() {
+      window.close();
+    }
+
+  
+    function aldatuModua() {
+      const body = document.body;
+      const button = document.getElementById("modeButton");
+  
+      body.classList.toggle("dark-mode");
+  
+      if (body.classList.contains("dark-mode")) {
+        button.textContent = "Light";
+      } else {
+        button.textContent = "Dark";
+      }
+    }
+  </script>
+  
+    <nav>
+        <a href="hasiera.html">Hasiera</a>
+        <a href="erreseina.html">Erreseina</a>
+        <button id="modeButton" onclick="aldatuModua()">Dark</button>
+
+        <button onclick="itxi()">Itxi orrialdea</button>
+    </nav>
+    <h1>AFRODITA</h1>
+    <p><b>Afrodita</b> (antzinako grezieraz: Ἀφροδίτη) maitasun erotikoaren eta edertasunaren jainkosa zen antzinako greziar mitologian, Venus erromatarraren parekoa. Hesiodo poeta greziarraren arabera, Uranoren odolak ernalduriko itsas uhinen aparretik sortua. Kronos, Uranoren semeak, aitaren genitalak moztu eta itsasora bota zituen, eta aphros edo itsasotik Afrodita sortu zen.</p>
+    <br>
+    <p>Jainkosa honek gizaki zein abereei ugaldu ahal izateko sena ematen zien, baina maitasun erotikoaren jainkosa zenez, sexurako grina bortitzak erevsortzen zituen. Era berean, Afroditak bere begiradarekin edozein gizon maitemin zezakeela esaten zen.</p>
+    <br>
+    <p>Antzinateko jainkoen artean gurtuenetako bat izan zen, eta honek hiri garrantzitsu ia guztitan bere tenplu zein estatuak egotea eragin zuen.</p>
+    <br>
+    <img src="Afrodira1.png">
+    <img src="Afrodita2.png">
+</body>
+</html>

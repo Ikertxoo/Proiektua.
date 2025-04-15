@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainkoak</title>
+    <link rel="stylesheet" href="proiektua.css" >
+    <style>
+        nav {
+          background-color: #333;
+          padding: 10px;
+        }
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+  <script>
+    function itxi() {
+      window.close();
+    }
+
+  
+    function aldatuModua() {
+      const body = document.body;
+      const button = document.getElementById("modeButton");
+  
+      body.classList.toggle("dark-mode");
+  
+      if (body.classList.contains("dark-mode")) {
+        button.textContent = "Light";
+      } else {
+        button.textContent = "Dark";
+      }
+    }
+  </script>
+  
+    <nav>
+        <a href="hasiera.html">Hasiera</a>
+        <a href="erreseina.html">Erreseina</a>
+        <button id="modeButton" onclick="aldatuModua()">Dark</button>
+
+        <button onclick="itxi()">Itxi orrialdea</button>
+    </nav>
+    <div class="gallery">
+      <a href="Proiektua2/Zeus.html" data-text="Zeus - Jainkoen erregea">
+        <img src="Pantaila-argazkia 2025-04-10 163237.png" alt="Zeus">
+      </a>
+      <a href="Proiektua2/Poseidon.html" data-text="Poseidon - Itsasoaren jainkoa">
+        <img src="poseidon.webp" alt="Poseidon">
+      </a>
+      <a href="Proiektua2/Ares.html" data-text="Ares - Gerraren jainkoa">
+        <img src="Ares.webp" alt="Ares">
+      </a>
+      <a href="Proiektua2/Hermes.html" data-text="Hermes - Mezularien jainkoa">
+        <img src="Hermes.webp" alt="Hermes">
+      </a>
+      <a href="Proiektua2/Afrodita.html" data-text="Afrodita - Maitasunaren jainkosa">
+        <img src="Afrodita.webp" alt="Afrodita">
+      </a>
+      <a href="Proiektua2/Atena.html" data-text="Atena - Jakinduriaren eta gudaren jainkosa">
+        <img src="statue-de-la-deesse-athena_480x480.webp" alt="Atena">
+      </a>
+    </div>
+    
+</body>
+</html>
+
+
+  
+</body>
+</html>

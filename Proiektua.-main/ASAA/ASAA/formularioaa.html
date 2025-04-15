@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularioa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Pertsonalizatzailea</a></li>
+            <li><a href="#">Formularioa</a></li>
+            <li><a href="#">Irudiak</a></li>
+            <li><a href="#">Modua</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form id="userForm">
+            <label for="izenOsoa">Izen osoa:</label>
+            <input type="text" id="izenOsoa" name="izenOsoa" placeholder="Sartazu zure izen osoa" required>
+
+            <label for="email">Emaila:</label>
+            <input type="email" id="email" name="email" placeholder="Sartazu zure posta elektronikoa" required>
+
+            <button type="button" onclick="onartuDatuak()">Onartu</button>
+
+            <label>Generoa:</label>
+            <div class="radio-group">
+                <input type="radio" id="gizonezkoa" name="generoa" value="Gizonezkoa">
+                <label for="gizonezkoa"><strong>Gizonezkoa</strong></label>
+
+                <input type="radio" id="emakumezkoa" name="generoa" value="Emakumezkoa">
+                <label for="emakumezkoa"><strong>Emakumezkoa</strong></label>
+
+                <input type="radio" id="besteBat" name="generoa" value="Beste bat">
+                <label for="besteBat"><strong>Beste bat</strong></label>
+            </div>
+
+            <label for="estatua">Estatua:</label>
+            <select id="estatua" name="estatua">
+                <option value="">Aukeratu zure herrialdea</option>
+                <option value="Espainia">Espainia</option>
+                <option value="Frantzia">Frantzia</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Italia">Italia</option>
+            </select>
+
+            <button type="submit">Bidali</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
