@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertsonalizatzailea</title>
+    <link rel="stylesheet" href="pertsonalizatzailea.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="#">Pertsonalizatzailea</a></li>
+            <li><a href="#">Formularioa</a></li>
+            <li><a href="#">Irudiak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Ongi etorria pertsonalizatzailea</h1>
+        <p id="text">Paragrafo honen estiloa alda dezakezu.</p>
+        <p><a href="#" id="customize">Klik egin pertsonalizatzeko.</a></p>
+
+        <div id="customizer">
+            <div class="section">
+                <p>atzeko_kolorea</p>
+                <div class="color-options" id="bgColors">
+                    <button class="color-btn" style="background-color: #ffcccc;" data-color="#ffcccc"></button>
+                    <button class="color-btn" style="background-color: #ccffcc;" data-color="#ccffcc"></button>
+                    <button class="color-btn" style="background-color: #99ffff;" data-color="#99ffff"></button>
+                    <button class="color-btn" style="background-color: #ffffff;" data-color="#ffffff"></button>
+                    <button class="color-btn" style="background-color: #cccccc;" data-color="#cccccc"></button>
+                    <button class="color-btn" style="background-color: #000000;" data-color="#000000"></button>
+                </div>
+            </div>
+
+            <div class="section">
+                <p>aldatu_letrak</p>
+                <div class="color-options" id="textColors">
+                    <button class="color-btn" style="background-color: red;" data-color="red"></button>
+                    <button class="color-btn" style="background-color: green;" data-color="green"></button>
+                    <button class="color-btn" style="background-color: blue;" data-color="blue"></button>
+                    <button class="color-btn" style="background-color: black;" data-color="black"></button>
+                </div>
+            </div>
+
+            <div class="section">
+                <p>Tamaina</p>
+                <div class="size-options" id="textSize">
+                    <button class="size-btn" data-size="12px">XS</button>
+                    <button class="size-btn" data-size="14px">S</button>
+                    <button class="size-btn" data-size="16px">M</button>
+                    <button class="size-btn" data-size="20px">L</button>
+                    <button class="size-btn" data-size="24px">XL</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="pertsonalizatzailea.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainkoak</title>
+    <link rel="stylesheet" href="proiektua.css" >
+    <style>
+        nav {
+          background-color: #333;
+          padding: 10px;
+        }
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+  <script>
+    function itxi() {
+      window.close();
+    }
+
+  
+    function aldatuModua() {
+      const body = document.body;
+      const button = document.getElementById("modeButton");
+  
+      body.classList.toggle("dark-mode");
+  
+      if (body.classList.contains("dark-mode")) {
+        button.textContent = "Light";
+      } else {
+        button.textContent = "Dark";
+      }
+    }
+  </script>
+  
+    <nav>
+        <a href="hasiera.html">Hasiera</a>
+        <a href="erreseina.html">Erreseina</a>
+        <button id="modeButton" onclick="aldatuModua()">Dark</button>
+
+        <button onclick="itxi()">Itxi orrialdea</button>
+    </nav>
+    <h1>ARES</h1>
+    <p>Greziar mitologian, <b>Ares</b> (grezieraz Ἄρης [árɛːs]) gudaren —edo, zehatzago esanda, bortizkeriaren— olinpiar jainkoa izan zen.</p>
+    <br>
+    <p>Aresek Zeus eta Hera zituen gurasoak. Iliadan agertutakoa, erromatar mitologian, Marte bere baliokidea izan zen. Homeroren testuei erreparatuz, gudaren olinpiar jainkoa ezezik, borrokarako gauza ere bazela ulertzen da. Indar akiezina zuen eta balentriaren ikurra zen, gizontasunaren ikurra, eta baita olinporen eta ejerzitoen defendatzailea, gizon zuzenen ikurra eta ahulen laguntzailea ere.</p>
+    <br>
+    <p>Gizonen ikur gisa hainbat bikotekide izan zituen kontakizun ugaritan banaturik. Gutxi gorabehera hogeita hamar bikote izan zituen eta guztira hirurogei ume inguru. Hauen artean, Eros, Harmonia, Fobos, Deimos eta Amazonak daude. Bikoteen artean, badirudi Afrodita izan zela bikotekide egonkorrena, amodioaren eta edertasunaren jainkosa. Berak gaixoaldietan lagundu zion eta gudan aliatua izan zuen.</p>
+    <br>
+    <p>Atena ere gudaren jainkosa izan zen baina estrategia eta taktikari lotzen zitzaion, gudaldiari berari baino. Borrokaren zentzuan, argi dago Ares zela jainko garrantzitsuena arlo honetan. Badirudi Helade iparraldean jaio zela, Traziako eremuetan eta hara joan zen Hefesto, Afroditaren senarra, emaztea Aresekin zebilela jakin zuenean. Izan ere, Afroditak behin baino gehiagotan engainatzen zuen bere senargaia.</p>
+    <br>
+    <p>Troiako gudan bi bandoen alde borroka egin zuen, bien balentriak ospatuz. Bere eskua, izurrien eta gaixotasunen atzean zegoela ere esaten zen eta horregatik, jainko askok Ares gorrotatzen zuten, bere gurasoek barne.</p>
+    <br>
+    <img src="Ares1.png">
+    <img src="Ares2.png">
+    <img src="Ares3.png">
+</body>
+</html>

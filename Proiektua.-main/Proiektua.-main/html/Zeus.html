@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainkoak</title>
+    <link rel="stylesheet" href="proiektua.css" >
+    <style>
+        nav {
+          background-color: #333;
+          padding: 10px;
+        }
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+  <script>
+    function itxi() {
+      window.close();
+    }
+
+  
+    function aldatuModua() {
+      const body = document.body;
+      const button = document.getElementById("modeButton");
+  
+      body.classList.toggle("dark-mode");
+  
+      if (body.classList.contains("dark-mode")) {
+        button.textContent = "Light";
+      } else {
+        button.textContent = "Dark";
+      }
+    }
+  </script>
+  
+    <nav>
+        <a href="hasiera.html">Hasiera</a>
+        <a href="erreseina.html">Erreseina</a>
+        <button id="modeButton" onclick="aldatuModua()">Dark</button>
+
+        <button onclick="itxi()">Itxi orrialdea</button>
+    </nav>
+    <h1>ZEUS</h1>
+    <p>Greziar mitologian, <b>Zeus</b> (grekoz Ζεύς) edo Dias (Δίας, «errege jainkotiarra») jainkoen eta gizakiaren aita da eta Olinpiar jainkoen buruzagia: haren seme-alaba ez zirenek ere aita deitzen zioten. Jainkoen erregea zen eta unibertsoaren ikuskatzailea. Zeruaren eta trumoiaren jainkoa ere izanik, haren sinboloak tximista, arranoa, zezena eta haritza ziren. Haren oinordekotza indoeuropearraz aparte, Ekialde Hurbileko atributu ikonografiko batzuk ere lortu zituen, adibidez, aginte-makila edo zetroa. Artista greziarrek, gehienetan, Zeus bi modutan irudikatzen zuten: zutik, aurrera eginez eta eskuineko eskuan tximista bat duelarik, edo dotoretasunez eserita.</p>
+    <br>
+    <p>Kronos eta Rea titanen seme gazteena izan zen. Tradizio gehienetan, arreba Hera jainkosarekin ezkonduta agertzen da, baina Dodonako orakuluan emaztea Dione zuen, eta Iliadaren arabera, harekin Afrodita alaba izan zuten. Oso ezaguna da anitz maitale izan zituelako; horren ondorioz, jainko-jainkosa eta heroi asko haren seme-alabak izan ziren: Atenea, Apolo eta Artemisa, Hermes, Persefone, Dioniso, Perseo, Herakles, Helena, Minos eta Musak. Herarekin aldiz, Ares, Hebe eta Hefestoren aita izan zela esaten da.</p>
+    <br>
+    <p>Erromatarren Jupiterren baliokidea da, baita etruskoen Tinia eta egiptoarren Amon jainkoena ere. Gaur egun, Jainkoari buruz dugun irudia (bai izena, bai itxura) harengandik dator.</p>
+    <br>
+    <img src="Zeus1.png"><img src="Zeus2.png"><img src="Zeus3.png">
+</body>
+</html>

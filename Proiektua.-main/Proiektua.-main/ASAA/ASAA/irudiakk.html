@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irudiak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Pertsonalizatzailea</a></li>
+            <li><a href="#">Formularioa</a></li>
+            <li><a href="#">Irudiak</a></li>
+            <li><a href="#">Modua</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Botoi Magikoa: Sortu eta aldatu irudiak</h2>
+        <button onclick="aldatuIrudia()">Aldatu irudia!</button>
+        <br>
+        <img id="aldatuImg" src="css_logo.png" alt="CSS logo" width="100">
+    </div>
+
+    <div class="container">
+        <h2>Automatikoki kargatzea</h2>
+        <img src="animation.gif" alt="GIF animatua" width="100">
+    </div>
+
+    <div class="container">
+        <h2>Irudi aukera</h2>
+        <select id="irudiAukera" onchange="aukeraAldatu()">
+            <option value="image1.png">Irudia 1</option>
+            <option value="image2.png">Irudia 2</option>
+            <option value="image3.png">Irudia 3</option>
+            <option value="image4.png">Irudia 4</option>
+            <option value="image5.png">Irudia 5</option>
+            <option value="image6.png">Irudia 6</option>
+        </select>
+        <br>
+        <img id="aukeraImg" src="image1.png" alt="Aukeratutako irudia" width="100">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

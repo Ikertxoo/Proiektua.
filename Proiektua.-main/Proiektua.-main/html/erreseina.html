@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainkoak</title>
+    <link rel="stylesheet" href="estiloak.css" >
+    <style>
+        nav {
+          background-color: #333;
+          padding: 10px;
+        }
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        nav a:hover {
+          text-decoration: underline;
+        }
+      </style>
+</head>
+<body>
+  <script>
+    function itxi() {
+      window.close();
+    }
+
+  
+    function aldatuModua() {
+      const body = document.body;
+      const button = document.getElementById("modeButton");
+  
+      body.classList.toggle("dark-mode");
+  
+      if (body.classList.contains("dark-mode")) {
+        button.textContent = "Light";
+      } else {
+        button.textContent = "Dark";
+      }
+    }
+  </script>
+  
+    <nav>
+        <a href="hasiera.html">Hasiera</a>
+        <a href="erreseina.html">Erreseina</a>
+        <button id="modeButton" onclick="aldatuModua()">Dark</button>
+
+        <button onclick="itxi()">Itxi orrialdea</button>
+    </nav>
+
+
+
+
+  
+    <h1>Balorazioa</h1>
+  
+  <main class="formulario-kontainerra">
+  <div class="form-errenkada">
+    <label>Puntuazioa</label>
+    <div class="form-taldea">
+      <input type="radio" id="gizonezkoa" name="generoa" value="male">
+      <label for="gizonezkoa">1</label>
+
+      <input type="radio" id="emakumezkoa" name="generoa" value="emakumezkoa">
+      <label for="emakumezkoa">2</label>
+
+      <input type="radio" id="besteak" name="generoa" value="besteak">
+      <label for="besteak">3</label>
+
+      <input type="radio" id="besteak" name="generoa" value="besteak">
+      <label for="besteak">4</label>
+
+      <input type="radio" id="besteak" name="generoa" value="besteak">
+      <label for="besteak">5</label>
+
+
+    </div>
+
+      <div class="form-errenkada">
+        <br>
+        <label for="posta">Iritzia:</label>
+        <input type="text" id="iritzia" name="iritzia" placeholder="idatzi zure iritzia"><br>
+        <div class="form-errenkada">
+        <button type="submit" class="submit-btn">Bidali</button>
+      </div>
+      </div>
+  </div>
+    </main>
+
+     </body>
+</html>
